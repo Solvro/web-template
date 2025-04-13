@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Solvro Next.js template
 
-## Getting Started
+## Welcome to the repository of Solvro Next.js template
 
-First, run the development server:
+A standardized Next.js template maintained by Solvro Science Club at Wrocław University of Science and Technology. This template incorporates our best practices, coding standards, and recommended project structure for web development projects. It serves as a starting point for new Solvro members and projects, ensuring consistency and quality across our initiatives.
+
+## Technologies used
+
+- Next.js
+- React.js
+- TypeScript
+- Tailwind CSS
+- Shadcn/ui
+- Tanstack Query
+
+## Links
+
+[![docs.solvro.pl](https://i.imgur.com/fuV0gra.png)](https://docs.solvro.pl)
+
+## Development
+
+### 1. Use this template
+
+![Homepage](https://i.imgur.com/RXm10f8.png)
+
+### 2. Install Dependencies
+
+```bash
+cd web-template
+npm install
+```
+
+### 3. Run the Project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. View the Application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Working with git
 
-## Learn More
+### Github Solvro Handbook
 
-To learn more about Next.js, take a look at the following resources:
+<https://docs.solvro.pl/guides/github>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### SSH
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If you are a Windows user, follow this [tutorial](https://www.youtube.com/watch?v=vExsOTgIOGw) to connect via SSH
 
-## Deploy on Vercel
+### Building a new feature
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Checkout and update main branch
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+   git checkout main
+   git pull origin main
+   git fetch
+```
+
+2. Create new feature branch
+
+```bash
+   git checkout -b feat/x_my_feature_branch
+```
+
+> 'x' stands for issue number; this command will create and checkout a new branch named feat/x_my_feature_branch
+
+3. Commit your changes:
+
+```bash
+   git add .
+   git commit -m "<description>"
+```
+
+4. Push to remote:
+
+```bash
+   git push origin feat/x_my_feature_branch
+```
+
+5. Create a Pull Request on GitHub and wait for a review
+
+### ⚠️ Important ⚠️
+
+- Do not push directly to main branch!
+- Please remember to commit before checking out to a different branch
+- Clean up after a successful merge
+
+  ```bash
+  git branch -d feat/x_my_feature_branch
+  git push origin --delete feat/x_my_feature_branch
+  ```
+
+## Contact
+
+For questions or suggestions, please reach out to us:
+
+- ✉️ Email: <kn.solvro@pwr.edu.pl>
+- 🌐 Website: [solvro.pwr.edu.pl](https://solvro.pwr.edu.pl/)
+- 📘 Facebook: [KN Solvro](https://www.facebook.com/knsolvro)
+
+---
+
+Thank you for reading! Stay tuned for more updates!
